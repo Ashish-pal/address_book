@@ -49,20 +49,20 @@ public class Application {
 
 			case 2:
 				// System.out.println(a);
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				Iterator<AddressBook> i = a.iterator();
 				while (i.hasNext()) {
 					AddressBook addr = i.next();
 					System.out.println(addr);
 				}
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				break;
 
 			case 3:
 				boolean found = false;
 				System.out.println("Enter serial number to search: ");
 				srno = s1.nextInt();
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				i = a.iterator();
 				while (i.hasNext()) {
 					AddressBook addr = i.next();
@@ -74,14 +74,14 @@ public class Application {
 				if (!found) {
 					System.out.println("Entered Number Record Not matched");
 				}
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				break;
 
 			case 4:
 				found = false;
 				System.out.println("Enter serial number to delete: ");
 				srno = s1.nextInt();
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				i = a.iterator();
 				while (i.hasNext()) {
 					AddressBook addr = i.next();
@@ -95,14 +95,14 @@ public class Application {
 				} else {
 					System.out.println("Record Deleted Successfully");
 				}
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				break;
 
 			case 5:
 				found = false;
 				System.out.println("Enter serial number to update: ");
 				srno = s1.nextInt();
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				// i = a.iterator();
 				ListIterator<AddressBook> li = a.listIterator();
 				while (li.hasNext()) {
@@ -131,7 +131,7 @@ public class Application {
 				} else {
 					System.out.println("Record Updated Successfully");
 				}
-				System.out.println("************************************");
+				System.out.println("***********************************");
 				break;
 			}
 		} while (ch != 0);
